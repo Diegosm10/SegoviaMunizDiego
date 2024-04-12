@@ -1,4 +1,4 @@
-personajes= [
+$personajes = [
     {
     "id": 4,
     "name": "Beth Smith",
@@ -217,7 +217,13 @@ fetch("https://rickandmortyapi.com/api/character/2")
     .then(data => { 
         console.log(data)
 */
-function buscadorpersonaje() {
-    var numero = document.getElementById("buscar").value
-    fetch("https://rickandmortyapi.com/api/character/2")
+
+function buscadorpersonajes () {
+    var numero = document.getElementById("id").value;
+    fetch (`https://rickandmortyapi.com/api/character/${numero}`)
+        .then(res => res.json())
+        .then((data) => {
+            console.log(data);
+            document.getElementById("nombre").innerHTML = data.name;
+        });
 }
