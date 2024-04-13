@@ -6,3 +6,9 @@ button {
     text-align: center;
     background-color: aliceblue;
 }
+input {
+    background-color: aliceblue;
+}
+body {
+    background-color: skyblue;
+}
