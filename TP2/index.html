@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,16 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input id="id" type="number" />
-    <button id="boton" type="button" onclick="buscadorpersonajes()">
-      Buscar
-    </button>
-    <p id="nombre"></p>
-    <input type="number" id="id2" />
-    <button id="boton2" type="button" onclick="buscadorpersonajes()">
-      Buscar
-    </button>
-    <p id="nombre2"></p>
+    <table>
+      <tr>
+        <td>
+          <input type="number" id="id" />
+          <button id="boton" type="button" onclick="buscadorpersonajes()">
+            Buscar
+          </button>
+          <p id="nombre"></p>
+          <div id="foto1"></div>
+        </td>
+        <td>
+          <div id="match"></div>
+        </td>
+        <td>
+          <input type="number" id="id2" />
+          <button id="boton2" type="button" onclick="buscadorpersonajes()">
+            Buscar
+          </button>
+          <p id="nombre2"></p>
+          <div id="foto2"></div>
+        </td>
+      </tr>
+    </table>
   </body>
   <script src="json.js"></script>
 </html>
