@@ -9,3 +9,10 @@ button {
 p {
     font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    text-align: center;
+}
