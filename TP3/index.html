@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-
-    <button id="boton" type="button" onclick="buscarpersona()"> Buscar
-    </button>
-</body>
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="boton" class="button" onclick="buscarpersona()">
+        Buscar
+      </button>
+      <div class="container2">
+        <div id="picture" class="picture"></div>
+        <div id="name" class="name"></div>
+        <div id="city" class="city"></div>
+        <div id="country" class="country"></div>
+      </div>
+      <div id="map" class="map"></div>
+    </div>
+  </body>
+  <script src="fn.js"></script>
+  <script src="leaflet.js"></script>
 </html>
