@@ -8,3 +8,6 @@ body {
 .map {
     left: 400px;
 }
+#container2 {
+    border: 25px solid black;
+}

@@ -6,9 +6,16 @@ function buscarpersona () {
         let latitude = data.results[0].location.coordinates.latitude;
         let longitude = data.results[0].location.coordinates.longitude;
         createmap(latitude,longitude)
+        let picture = document.getElementById("picture")
+        picture.innerHTML = `<img src="${data.results[0].picture.thumbnail}" alt="foto pesona">`;
         let name = document.getElementById("name")
-        name.innerHTML = data.results[0].name.title + ' ' + data.results[0].name.first + ' ' + data.results[0].name.last;
-        let picture = document.getElementById()
+        name.innerHTML = "Nombre completo: " + data.results[0].name.title + ' ' + data.results[0].name.first + ' ' + data.results[0].name.last;
+        let age = document.getElementById("age")
+        age.innerHTML = "Edad: " + data.results[0].dob.age;
+        let city = document.getElementById("city")
+        city.innerHTML = "Ciudad: " + data.results[0].location.city;
+        let country = document.getElementById("country")
+        country.innerHTML = "Pais: " + data.results[0].location.country;
     })
 }
 function createmap(latitude,longitude) {
