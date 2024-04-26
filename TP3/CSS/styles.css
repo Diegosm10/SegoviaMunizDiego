@@ -1,11 +1,11 @@
-#map {
+#mapa {
     height: 400px;
     width: 600px;
 }
 body {
     text-align: center;
 }
-.map {
+.mapa {
     left: 400px;
 }
 #container2 {
