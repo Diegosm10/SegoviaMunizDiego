@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    background-color: skyblue;
+}
+.container1 {
+    text-align: left;
+}
+.container2 {
+    text-align: right;
+}
