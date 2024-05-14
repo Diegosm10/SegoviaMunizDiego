@@ -1,0 +1,15 @@
+body {
+    background-color: skyblue;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+#boton1 {
+    background-color: darkslategray;
+    color: white;
+}
+#boton2 {
+    background-color: darkslategray;
+    color: white;
+}

@@ -2,27 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="CSS\leaflet.css" />
-    <link rel="stylesheet" href="CSS\styles.css" />
+    <link rel="stylesheet" href="CSS\style.css" />
   </head>
   <body>
     <div class="container">
-      <button id="boton" class="button" onclick="buscarpersona()">
-        Buscar
-      </button>
-      <div class="container2">
-        <div id="picture"></div>
-        <div id="name"></div>
-        <div id="age"></div>
-        <div id="city"></div>
-        <div id="country"></div>
+      <div class="container1">
+        <input id="ingreso1" type="number" step="1" placeholder="ID grupo A" />
+        <button id="boton1" onclick="capturarnumeros1()">Enviar</button>
+        <div id="info1"></div>
       </div>
-      <div id="error" style="color: red;"></div>
-      <div id="mapa" class="mapa"></div>
+      <div class="container2">
+        <input id="ingreso2" type="number" step="1" placeholder="ID grupo B" />
+        <button id="boton2" onclick="capturarnumeros2()">Enviar</button>
+        <div id="info2"></div>
+      </div>
     </div>
   </body>
-  <script src="JS\fn.js"></script>
-  <script src="JS\leaflet.js"></script>
+  <script src="FN\fn.js"></script>
 </html>
